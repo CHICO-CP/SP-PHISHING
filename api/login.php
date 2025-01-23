@@ -4,8 +4,7 @@
 require 'vendor/autoload.php';
 
 // URI de conexión a MongoDB Atlas
-$uri = "mongodb://CHICO_CP:CHICO_CP@chicosp.qgyvr.mongodb.net/?retryWrites=true&w=majority&appName=CHICOSP
-MONGO_URI=mongodb://CHICO_SP:CHICO_CP@videojuego-shard-00-00.q8k6p.mongodb.net:27017/?ssl=true&authSource=admin&retryWrites=true&w=majority";
+$uri = "mongodb://CHICO_SP:CHICO_CP@videojuego-shard-00-00.q8k6p.mongodb.net:27017/?ssl=true&authSource=admin&retryWrites=true&w=majority";
 
 // Conectar a MongoDB
 $client = new MongoDB\Client($uri);
